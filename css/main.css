@@ -1,0 +1,82 @@
+:root {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+
+    --purpleAccent: #80a;
+}
+
+body {
+    background: #111;
+    color: #ccc;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    height: 100vh;
+}
+
+header {
+    grid-column: span 2;
+    background: #222;
+    height: 50px;
+}
+.contents {
+    padding: 10px 20px;
+    margin: 0;
+    font-size: 1.25em;
+    font-weight: bold;
+}
+.toc {
+    background: #161616;
+}
+.toc ul {
+    padding: 0;
+    margin: 0;
+}
+.toc li {
+    list-style-type: none;
+    background-color: transparent;
+    padding: 5px 20px;
+    transition: all 0.15s ease-in-out;
+}
+.toc li:hover {
+    background: var(--purpleAccent);
+    color: #111;
+    cursor: pointer;
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 30px;
+    overflow-y: scroll;
+}
+
+h1 {
+    margin: 0;
+    line-height: 1em;
+}
+
+h2,h3,h4 {
+    margin: 2em 0 0;
+    line-height: 1em;
+}
+p {
+    margin: 1em 0 0;
+}
+
+h1 {
+    font-size: 2em;
+    color: #e0f;
+    border-bottom: 3px solid var(--purpleAccent);
+}
+
+h2 {
+    font-size: 1.3em;
+    color: #5f8;
+}
+
+@media screen and (max-width: 1000px) {
+    body {
+        display: block;
+    }
+}
