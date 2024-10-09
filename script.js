@@ -41,6 +41,11 @@ function getTerms() {
     }
 
     $glossary.innerHTML = output
+    $glossary.classList.add('fadein')
+    $glossary.addEventListener('animationend', () => {
+        $glossary.classList.remove('fadein')
+        $glossary.removeEventListener('animationend')
+    })
 }
 getTerms()
 

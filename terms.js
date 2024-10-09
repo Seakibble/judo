@@ -109,22 +109,6 @@ const judoTerms = {
     yama: 'mountain',
     yoko: 'side',
 
-    'zempo-kaiten': 'forward',
+    'zempo-kaiten': 'forward (breakfall)',
     zarei: 'kneeling bow'
 }
-/*
-Uchi - inner
-Uchikomi - repetition training 
-Ude - arm
-Uki - floating
-Ukemi - breakfall
-Uke - receiving partner
-Ura - rear
-
-Waza - technique
-
-Yama - Mountain
-Yoko - side
-
-Zempo-kaiten: forward breakfall 
-*/

@@ -55,8 +55,8 @@ header {
 main {
     width: 100%;
     margin: 0 auto;
-    padding: 30px;
-    overflow-y: scroll;
+    padding: 20px;
+    /* overflow-y: scroll; */
 }
 
 h1 {
@@ -69,7 +69,7 @@ h2,h3,h4 {
     line-height: 1em;
 }
 p {
-    margin: 1em 0 0;
+    margin: 0.5em 0 0;
 }
 
 h1 {
@@ -135,6 +135,21 @@ input:focus {
     margin-top: 0;
 }
 
+.fadein {
+    animation: fadein 0.5s;
+    transform-origin: top;
+}
+@keyframes fadein {
+    from {
+        opacity: 0;
+        transform: scaleY(0);
+    }
+    to {
+        opacity: 1;
+        transform: scaleY(1);
+    }
+}
+
 @media screen and (max-width: 1000px) {
     body {
         display: block;
@@ -143,11 +158,11 @@ input:focus {
         display: block;
     }
     .glossary > h2 {
-        margin-top: 2em;
+        margin-top: 1.5em;
         padding: 0;
         border-bottom: 2px solid #555;
-        margin-bottom: 1rem;
-        padding-bottom: 1rem;
+        margin-bottom: 0.5rem;
+        padding-bottom: 0.5rem;
     }
     .terms {
         border-left: none;
