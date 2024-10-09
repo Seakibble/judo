@@ -110,6 +110,7 @@ const judoTerms = {
     tai: 'body',
     tomoe: 'circle',
     tsuri: 'lifting',
+    tsubame: 'swallow',
     tori: 'attacking partner',
 
     uchi: 'inner',
