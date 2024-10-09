@@ -44,7 +44,7 @@ const judoTerms = {
     judoka: 'Judo practitioner',
     
     kami: 'upper',
-    kata: 'single, form or pattern, shoulder, half',
+    kata: 'single, form or pattern, shoulder',
     kazure: 'modified',
     kazushi: "judo principle meaning 'off-balancing an opponent'",
     keikoku: 'warning',
