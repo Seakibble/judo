@@ -41,7 +41,7 @@ const judoTerms = {
     kami: 'upper',
     kata: 'single, form or pattern, shoulder, half',
     kazure: 'modified',
-    kazushi: "Judo principle meaning 'off-balancing an opponent'",
+    kazushi: "judo principle meaning 'off-balancing an opponent'",
     keikoku: 'warning',
     keiotsuke: 'attention',
     kesa: 'scarf',
@@ -84,7 +84,7 @@ const judoTerms = {
     sumi: 'corner',
     shi: 'four',
     shichi: 'seven',
-    'seiryoku-zenyo': "Judo principle meaning 'good use of energy'",
+    'seiryoku-zenyo': "judo principle meaning 'good use of energy'",
     
     tatami: 'training mat',
     te: 'hand',

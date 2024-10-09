@@ -13,7 +13,7 @@ function getTerms() {
 
     if (search) {
         keys = keys.filter((term) => {
-            return (term.includes(search) || judoTerms[term].includes(search))
+            return (term.includes(search.toLowerCase()) || judoTerms[term].includes(search.toLowerCase()))
         })
         output += `<p class='results'>${results(keys.length)}.</p>`
     
