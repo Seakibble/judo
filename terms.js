@@ -21,11 +21,13 @@ const judoTerms = {
     gi: { name: 'uniform'},
 
     ha: { name: 'wing'},
+    hara: { name: 'stomach'},
     hajime: { name: 'start'},
     hadaka: { name: 'naked'},
     hane: { name: 'springing'},
     hishigi: { name: 'crushing'},
     harai: { name: 'sweeping'},
+    hiji: { name: 'elbow'},
     hiza: { name: 'knee'},
     hachi: { name: 'eight'},
     
@@ -34,6 +36,7 @@ const judoTerms = {
 
     jigoku: { name: 'hell'},
     jime: { name: 'strangle'},
+    joseki: { name: 'place of honour, upper seat'},
     juji: { name: 'cross'},
     juu: { name: 'ten'},
     judogi: { name: 'judo uniform'},
