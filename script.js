@@ -18,7 +18,7 @@ function getTerms() {
         output += `<p class='results'>${results(keys.length)}.</p>`
     
     } else {
-        output += `<p class='results'>All terms. ${results(keys.length)}.</p>`
+        output += `<p class='results'>Showing all terms. ${results(keys.length)}.</p>`
     }
 
     keys.forEach(term => {
