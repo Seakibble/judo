@@ -34,8 +34,8 @@ function getTerms() {
         let waza = judoTerms[term].type
         let wazaText = ''
         if (waza) {
-            waza = waza.replace('-', '&#8209;')
-            wazaText = `<span class='waza ${waza}'>${waza}</span> `
+            let wazaTagText = waza.replaceAll('-', '&#8209;')
+            wazaText = `<br><span class='waza ${waza}'>${wazaTagText}</span> `
         }
 
         let links = judoTerms[term].links
@@ -46,7 +46,7 @@ function getTerms() {
             })
         }
         if (linkText.length > 0) {
-            linkText = `<span class='links'>| <em>Links:&nbsp;${linkText.join(', ')}</em></span>`
+            linkText = `<span class='links'>| <em>videos:&nbsp;${linkText.join(', ')}</em></span>`
         }
 
         terms += `<p><strong>${term}</strong> - ${judoTerms[term].name} ${wazaText}${linkText}</p>` 
@@ -60,14 +60,23 @@ function getTerms() {
 
     $glossary.innerHTML = output
     $glossary.classList.add('fadein')
-    $glossary.addEventListener('animationend', () => {
-        $glossary.classList.remove('fadein')
-        $glossary.removeEventListener('animationend')
-    })
+    $glossary.addEventListener('animationend', fadeIn)
+}
+function fadeIn() {
+    $glossary.classList.remove('fadein')
+    $glossary.removeEventListener('animationend', fadeIn)
 }
 getTerms()
 
-$search.addEventListener('input', getTerms)
+let searchTimer = null
+$search.addEventListener('input', () => {
+    if (searchTimer !== null) {
+        clearTimeout(searchTimer)
+    }
+    searchTimer = setTimeout(() => {
+        getTerms()
+    }, 250)
+})
 
 function results(n) {
     if (n > 1) return n + ' results' 
