@@ -24,6 +24,7 @@ const judoTerms = {
     hajime: { name: 'start'},
     hadaka: { name: 'naked'},
     hane: { name: 'springing'},
+    hishigi: { name: 'crushing'},
     harai: { name: 'sweeping'},
     hiza: { name: 'knee'},
     hachi: { name: 'eight'},
