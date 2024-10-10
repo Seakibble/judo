@@ -89,16 +89,20 @@ a {
     border-bottom: 1px solid #444;
     transition: all 0.25s;
 }
+a:visited {
+    color: var(--purpleAccent);
+}
 a:hover {
     color: var(--blue);
     border-color: white;
 }
+
 .links {
     color: var(--subtle);
 }
 
 .searchbar {
-    margin: 1em 0 0;
+    margin: 0.7em 0 0;
     font-size: 1.7rem;
 }
 .searchbar > i {
@@ -155,6 +159,23 @@ input:focus {
 }
 .terms > :first-child {
     margin-top: 0;
+}
+
+.waza {
+    font-size: 0.8em;
+    background: var(--purpleAccent);
+    color: white;
+    padding: 0.1em 0.5em;
+    border-radius: 0.5em;
+}
+.waza.ashi-waza {
+    background: #058;
+}
+.waza.koshi-waza {
+    background: #940;
+}
+.waza.te-waza {
+    background: #409;
 }
 
 .fadein {

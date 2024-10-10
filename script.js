@@ -31,6 +31,12 @@ function getTerms() {
             output += '<h2>'+letter.toUpperCase()+'</h2>'
         }
 
+        let waza = judoTerms[term].type
+        let wazaText = ''
+        if (waza) {
+            wazaText = `<span class='waza ${waza}'>${waza}</span> `
+        }
+
         let links = judoTerms[term].links
         let linkText = []
         if (links) {
@@ -42,7 +48,7 @@ function getTerms() {
             linkText = `<span class='links'>| <em>Links:&nbsp;${linkText.join(', ')}</em></span>`
         }
 
-        terms += `<p><strong>${term}</strong> - ${judoTerms[term].name} ${linkText}</p>` 
+        terms += `<p><strong>${term}</strong> - ${judoTerms[term].name} ${wazaText}${linkText}</p>` 
 
     })
 
