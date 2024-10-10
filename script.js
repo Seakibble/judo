@@ -13,7 +13,7 @@ function getTerms() {
 
     if (search) {
         keys = keys.filter((term) => {
-            return (term.includes(search.toLowerCase()) || judoTerms[term].includes(search.toLowerCase()))
+            return (term.includes(search.toLowerCase()) || judoTerms[term].name.includes(search.toLowerCase()))
         })
         output += `<p class='results'>${results(keys.length)}.</p>`
     
@@ -31,7 +31,18 @@ function getTerms() {
             output += '<h2>'+letter.toUpperCase()+'</h2>'
         }
 
-        terms += `<p><strong>${term}</strong> - ${judoTerms[term]}</p>` 
+        let links = judoTerms[term].links
+        let linkText = []
+        if (links) {
+            Object.keys(links).forEach(link => {
+                linkText.push(`<a class="external" href='${links[link]}' target="_blank">${link}</i></a>`)
+            })
+        }
+        if (linkText.length > 0) {
+            linkText = `<span class='links'>| <em>Links:&nbsp;${linkText.join(', ')}</em></span>`
+        }
+
+        terms += `<p><strong>${term}</strong> - ${judoTerms[term].name} ${linkText}</p>` 
 
     })
 

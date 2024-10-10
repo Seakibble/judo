@@ -1,138 +1,404 @@
 const judoTerms = {
-    ashi: 'foot, leg',
-    'ashi waza': 'foot techniques',
-    arashi: 'storm',
+    ashi: { name: 'foot, leg' },
+    'ashi waza': { name: 'foot techniques' },
+    arashi: { name: 'storm' },
 
-    dan: 'black belt grade',
-    de: 'advanced',
-    dojo: 'training room',
+    dan: { name: 'black belt grade' },
+    de: { name: 'advanced' },
+    dojo: { name: 'training room' },
 
-    eri: 'lapel, collar',
+    eri: { name: 'lapel or collar' },
 
-    gaeshi: 'counter',
-    gake: 'hooking, propping',
-    garami: 'lock',
-    gari: 'reaping',
-    gatame: 'hold',
-    goshi: 'hip',
-    guruma: 'wheel',
-    gyaku: 'reverse',
-    go: 'five',
-    gi: 'uniform',
+    gaeshi: { name: 'counter' },
+    gake: { name: 'hooking, propping' },
+    garami: { name: 'lock'},
+    gari: { name: 'reaping'},
+    gatame: { name: 'hold'},
+    goshi: { name: 'hip'},
+    guruma: { name: 'wheel'},
+    gyaku: { name: 'reverse'},
+    go: { name: 'five'},
+    gi: { name: 'uniform'},
 
-    ha: 'wing',
-    hara: 'stomach',
-    hajime: 'start',
-    hadaka: 'naked',
-    hane: 'springing',
-    harai: 'sweeping',
-    hiji: 'elbow',
-    hiza: 'knee',
-    hachi: 'eight',
+    ha: { name: 'wing'},
+    hajime: { name: 'start'},
+    hadaka: { name: 'naked'},
+    hane: { name: 'springing'},
+    harai: { name: 'sweeping'},
+    hiza: { name: 'knee'},
+    hachi: { name: 'eight'},
     
-    ichi: 'one',
-    ippon: 'single-handed, victory in one point',
+    ichi: { name: 'one'},
+    ippon: { name: 'single-handed, point'},
 
-    jigoku: 'hell',
-    jikan: 'referee call to stop the clock',
-    jime: 'strangle',
-    'jita kyoei': 'principle of mutual prosperity',
-    joseki: 'place of honour, upper seat',
-    juji: 'cross',
-    juu: 'ten',
-    judogi: 'judo uniform',
-    judoka: 'judo practitioner',
+    jigoku: { name: 'hell'},
+    jime: { name: 'strangle'},
+    juji: { name: 'cross'},
+    juu: { name: 'ten'},
+    judogi: { name: 'Judo uniform'},
+    judoka: { name: 'Judo practitioner'},
     
-    kami: 'upper',
-    kata: 'single, form or pattern, shoulder',
-    kazure: 'modified',
-    kazushi: "judo principle meaning 'off-balancing an opponent'",
-    katame: 'hold',
-    keikoku: 'warning',
-    keiotsuke: 'attention',
-    kesa: 'scarf',
-    kiai: 'to gather spirit with a shout',
-    ko: 'small',
-    komi: 'pulling',
-    koshi: 'hip',
-    kubi: 'neck',
-    kyu: 'nine, coloured belt grade',
+    kami: { name: 'upper'},
+    kata: { name: 'single, form or pattern, shoulder, half'},
+    kazure: { name: 'modified'},
+    kazushi: { name: "judo principle meaning 'off-balancing an opponent'"},
+    keikoku: { name: 'warning'},
+    keiotsuke: { name: 'attention'},
+    kesa: { name: 'scarf'},
+    kibisu: { name: 'heel'},
+    ko: { name: 'small'},
+    komi: { name: 'pulling'},
+    kyu: { name: 'nine, coloured belt grade'},
 
-    makikomi: 'wraparound',
-    mata: 'thigh',
-    mae: 'forward, front',
-    maitta: 'I surrender',
-    mate: 'wait',
-    morote: 'two-handed',
-    mune: 'chest',
+    makikomi: { name: 'wraparound'},
+    mata: { name: 'thigh'},
+    maitta: { name: 'I surrender'},
+    mate: { name: 'wait'},
+    morote: { name: 'two-handed'},
     
-    nage: 'throw',
-    nagekomi: 'throwing repetition training',
-    nami: 'normal',
-    'ne waza': 'ground techniques',
-    ni: 'two',
+    nage: { name: 'throw'},
+    nami: { name: 'normal'},
+    'ne waza': { name: 'ground techniques' },
+    ni: { name: 'two'},
 
-    o: 'big, full, great',
-    obi: 'belt',
-    okuri: 'sliding',
-    otoshi: 'drop',
-    osaekomi: 'pin, referee call to begin timing',
+    o: { name: 'big, full, great'},
+    obi: { name: 'belt'},
+    okuri: { name: 'sliding'},
+    otoshi: { name: 'drop'},
 
-    randori: 'free practice, sparring',
-    roku: 'six',
-    rei: 'bow',
-    ritsurei: 'standing bow',
+    randori: { name: 'free sparring'},
+    roku: { name: 'six'},
+    rei: { name: 'bow'},
     
-    sankaku: 'entangled, triangle',
-    san: 'three',
-    seiza: 'formal kneeling posture',
-    sensei: 'teacher',
-    sesae: 'propping',
-    sode: 'sleeve',
-    soto: 'outer',
-    'sore made': 'finished, time is up',
-    shiho: 'four quarter',
-    shiai: 'contest, tournament, sparring match',
-    shido: 'instruction, light penalty',
-    shinpan: 'referee',
-    shisei: 'posture',
-    shodan: 'promotion, black belt',
-    shomen: 'front of dojo',
-    sukui: 'scooping',
-    sutemi: 'sacrifice',
-    sumi: 'corner',
-    shi: 'four',
-    shichi: 'seven',
-    'seiryoku-zenyo': "judo principle meaning 'good use of energy'",
+    sankaku: { name: 'entangled, triangle'},
+    san: { name: 'three'},
+    sensei: { name: 'teacher'},
+    sesae: { name: 'propping'},
+    sode: { name: 'sleeve'},
+    soto: { name: 'outer'},
+    shiho: { name: 'four quarter'},
+    shiai: { name: 'contest, tournament, sparring match'},
+    shido: { name: 'instruction, light penalty'},
+    shodan: { name: 'promotion, black belt'},
+    sukui: { name: 'scooping'},
+    sutemi: { name: 'sacrifice'},
+    sumi: { name: 'corner'},
+    shi: { name: 'four'},
+    shichi: { name: 'seven'},
+    'seiryoku-zenyo': { name: "judo principle meaning 'good use of energy'" },
     
-    tatami: 'training mat',
-    te: 'hand',
-    tate: 'vertical',
-    'tachi waza': 'standing techniques',
-    tai: 'body',
-    tomoe: 'circle',
-    tsuri: 'lifting',
-    tsubame: 'swallow',
-    tori: 'attacking partner',
+    tatami: { name: 'training mat'},
+    te: { name: 'hand'},
+    tate: { name: 'vertical'},
+    'tachi waza': { name: 'standing techniques' },
+    tai: { name: 'body'},
+    tomoe: { name: 'circle'},
+    tsuri: { name: 'lifting'},
+    tori: { name: 'attacking partner'},
 
-    uchi: 'inner',
-    uchikomi: 'repetition training',
-    ude: 'arm',
-    uki: 'floating',
-    ukemi: 'breakfall',
-    uke: 'receiving partner',
-    ura: 'rear, back',
-    utsuri: 'shift',
+    uchi: { name: 'inner'},
+    uchikomi: { name: 'repetition training'},
+    ude: { name: 'arm'},
+    uki: { name: 'floating'},
+    ukemi: { name: 'breakfall'},
+    uke: { name: 'receiving partner'},
+    ura: { name: 'rear, back'},
+    utsuri: { name: 'shift'},
 
-    waki: 'armpit',
-    waza: 'technique',
+    waza: { name: 'technique'},
 
-    yama: 'mountain',
-    yoko: 'side',
-    yoshi: 'resume action, continue',
-    yubi: 'finger',
-    zanshin: 'awareness',
-    'zempo-kaiten': 'forward (breakfall)',
-    zarei: 'kneeling bow',
-    zubon: 'pants',
+    yama: { name: 'mountain'},
+    yoko: { name: 'side'},
+
+    'zempo-kaiten': { name: 'forward (breakfall)'},
+    zarei: { name: 'kneeling bow'},
+
+
+
+    // Techniques
+    
+    // ************** Te Waza ************************************
+    'ippon seoinage': {
+        belt: 'yellow',
+        type: 'te-waza',
+        name: 'one-hand shoulder throw',
+        links: {
+            'KODOKAN': 'https://youtu.be/FQnOlCxo4oI',
+            'Shintaro Nakano': 'https://youtu.be/VAjJMtVl8Ow'
+        },
+    },
+    'kata garuma': {
+        belt: 'green',
+        type: 'te-waza',
+        name: 'shoulder wheel',
+        links: {
+            'KODOKAN': 'https://youtu.be/cnHRhSy8yi4',
+            'Shintaro Higashi': 'https://youtu.be/6tSOm33R6VA'
+        },
+    },
+    'kibisu gaeshi': {
+        belt: '',
+        type: 'te-waza',
+        name: 'heel counter (a.k.a. ankle pick, heel trip, one-hand reversal)',
+        links: {
+            'KODOKAN': 'https://youtu.be/tJylJYfBliA'
+        },
+    },
+    'morote gari': {
+        belt: '',
+        type: 'te-waza',
+        name: 'two-hand reap',
+        links: {
+            'KODOKAN': 'https://youtu.be/BHLQS4K85bs'
+        },
+    },
+    'obi otoshi': {
+        belt: '',
+        type: 'te-waza',
+        name: 'belt drop',
+        links: {
+            'KODOKAN': 'https://youtu.be/BHLQS4K85bs'
+        },
+    },
+    'seoi nage': {
+        belt: '',
+        type: 'te-waza',
+        name: 'shoulder throw',
+        aka: 'morote seoinage (two-hand shoulder throw)',
+        links: {
+            'KODOKAN': 'https://youtu.be/zIq0xI0ogxk'
+        },
+    },
+    'seoi otoshi': {
+        belt: '',
+        type: 'te-waza',
+        name: 'shoulder drop',
+        links: {
+            'KODOKAN': 'https://youtu.be/vu1TMVNnq34'
+        },
+    },
+    'sukui nage': {
+        belt: '',
+        type: 'te-waza',
+        name: 'scoop throw',
+        links: {
+            'KODOKAN': 'https://youtu.be/vU6aJ2kFxoI'
+        },
+    },
+    'sumi otoshi': {
+        belt: '',
+        type: 'te-waza',
+        name: 'corner drop',
+        links: {
+            'KODOKAN': 'https://youtu.be/lLU9wv52ni0'
+        },
+    },
+    'tai otoshi': {
+        belt: '',
+        type: 'te-waza',
+        name: 'body drop',
+        links: {
+            'KODOKAN': 'https://youtu.be/4x6S3Q-Ktv8'
+        },
+    },
+    'uchi mata sukashi': {
+        belt: '',
+        type: 'te-waza',
+        name: 'inner thigh void throw',
+        links: {
+            'KODOKAN': 'https://youtu.be/V-RS3uhtVWM'
+        },
+    },
+    'uki otoshi': {
+        belt: '',
+        type: 'te-waza',
+        name: 'floating drop',
+        links: {
+            'KODOKAN': 'https://youtu.be/6H5tmncOY4Q'
+        },
+    },
+    'yama arashi': {
+        belt: '',
+        type: 'te-waza',
+        name: 'mountain storm',
+        links: {
+            'KODOKAN': 'https://youtu.be/MGlyKmSuzdc'
+        },
+    },
+    'kouchi gaeshi': {
+        belt: '',
+        type: 'te-waza',
+        name: 'small inner counter',
+        links: {
+            'KODOKAN': 'https://youtu.be/_MWAdYi_LC4'
+        },
+    },
+    'kuchiki taoshi': {
+        belt: '',
+        type: 'te-waza',
+        name: 'single leg takedown',
+        links: {
+            'KODOKAN': 'https://youtu.be/ZNL47q1aJNY'
+        },
+        aka: 'dead tree drop'
+    },
+
+    // ************** Koshi Waza ************************************
+    'daki age': {
+        belt: '',
+        type: 'koshi-waza',
+        name: 'hugging high lift',
+    },
+    'hane goshi': {
+        belt: '',
+        type: 'koshi-waza',
+        name: 'springing hip',
+    },
+    'harai goshi': {
+        belt: '',
+        type: 'koshi-waza',
+        name: 'sweeping hip',
+    },
+    'koshi guruma': {
+        belt: '',
+        type: 'koshi-waza',
+        name: 'hip wheel',
+    },
+    'o goshi': {
+        belt: '',
+        type: 'koshi-waza',
+        name: 'full hip',
+    },
+    'sode tsurikomi goshi': {
+        belt: '',
+        type: 'koshi-waza',
+        name: 'sleeve lifting-and-pulling hip',
+    },
+    'tsuri goshi': {
+        belt: '',
+        type: 'koshi-waza',
+        name: 'lifting hip',
+    },
+    'tsurikomi goshi': {
+        belt: '',
+        type: 'koshi-waza',
+        name: 'lifting-and-pulling hip',
+    },
+    'uki goshi': {
+        belt: '',
+        type: 'koshi-waza',
+        name: 'floating hip',
+    },
+    'ushiro goshi': {
+        belt: '',
+        type: 'koshi-waza',
+        name: 'rear hip',
+    },
+    'utsuri goshi': {
+        belt: '',
+        type: 'koshi-waza',
+        name: 'shifting hip',
+    },
+
+    // ************** Ashi Waza ************************************
+    'ashi guruma': {
+        belt: '',
+        type: 'ashi-waza',
+        name: 'leg wheel',
+    },
+    'de ashi barai': {
+        belt: '',
+        type: 'ashi-waza',
+        name: 'advanced foot sweep',
+    },
+    'hane goshi gaeshi': {
+        belt: '',
+        type: 'ashi-waza',
+        name: 'hip spring counter',
+    },
+    'harai goshi gaeshi': {
+        belt: '',
+        type: 'ashi-waza',
+        name: 'hip sweep counter',
+    },
+    'harai tsurikomi ashi': {
+        belt: '',
+        type: 'ashi-waza',
+        name: 'lifting-and-pulling foot sweep',
+    },
+    'hiza guruma': {
+        belt: '',
+        type: 'ashi-waza',
+        name: 'knee wheel',
+    },
+    'kosoto gake': {
+        belt: '',
+        type: 'ashi-waza',
+        name: 'small outer hook',
+    },
+    'kosoto gari': {
+        belt: '',
+        type: 'ashi-waza',
+        name: 'small outer reap',
+    },
+    'o guruma': {
+        belt: '',
+        type: 'ashi-waza',
+        name: 'big wheel',
+    },
+    'okuri ashi harai': {
+        belt: '',
+        type: 'ashi-waza',
+        name: 'sliding foot sweep',
+    },
+    'osoto gaeshi': {
+        belt: '',
+        type: 'ashi-waza',
+        name: 'big outer (reap) counter',
+    },
+    'osoto gari': {
+        belt: '',
+        type: 'ashi-waza',
+        name: 'big outer reap',
+    },
+    'osoto guruma': {
+        belt: '',
+        type: 'ashi-waza',
+        name: 'bigg outer wheel',
+    },
+    'osoto otoshi': {
+        belt: '',
+        type: 'ashi-waza',
+        name: 'big outer drop',
+    },
+    'ouchi gaeshi': {
+        belt: '',
+        type: 'ashi-waza',
+        name: 'big inner (reap) counter',
+    },
+    'ouchi gari': {
+        belt: '',
+        type: 'ashi-waza',
+        name: 'big inner reap',
+    },
+    'sasae tsurikomi ashi': {
+        belt: '',
+        type: 'ashi-waza',
+        name: 'propping lifting-and-pulling leg',
+    },
+    'tsubame gaeshi': {
+        belt: '',
+        type: 'ashi-waza',
+        name: 'swallow counter',
+    },
+    'uchi mata': {
+        belt: '',
+        type: 'ashi-waza',
+        name: 'inner thigh',
+    },
+    'uchi mata gaeshi': {
+        belt: '',
+        type: 'ashi-waza',
+        name: 'inner thigh counter',
+    },
 }
