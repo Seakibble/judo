@@ -34,6 +34,7 @@ function getTerms() {
         let waza = judoTerms[term].type
         let wazaText = ''
         if (waza) {
+            waza = waza.replace('-', '&#8209;')
             wazaText = `<span class='waza ${waza}'>${waza}</span> `
         }
 
