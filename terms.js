@@ -81,7 +81,7 @@ const judoTerms = {
     o: { name: 'big, full, great'},
     obi: { name: 'belt'},
     okuri: { name: 'sliding'},
-    osaekomi: { name: 'pinning hold, referee call to begin timing'},
+    osaikomi: { name: 'pinning hold, referee call to begin timing'},
     otoshi: { name: 'drop'},
 
     randori: { name: 'free practice, sparring'},
@@ -625,70 +625,70 @@ const judoTerms = {
 
     // ************** Osaekomi Waza ************************************
     'kesa-gatame': {
-        type: 'osaekomi-waza',
+        type: 'osaikomi-waza',
         name: 'scarf hold',
         links: {
             'KODOKAN': 'https://youtu.be/NDaQuJOFBYk'
         },
     },
     'kuzure-kesa-gatame': {
-        type: 'osaekomi-waza',
+        type: 'osaikomi-waza',
         name: 'modified scarf hold',
         links: {
             'KODOKAN': 'https://youtu.be/Q2fb9jaoUFQ'
         },
     },
     'ushiro-kesa-gatame': {
-        type: 'osaekomi-waza',
+        type: 'osaikomi-waza',
         name: 'reverse scarf hold',
         links: {
             'KODOKAN': 'https://youtu.be/SBapox2M2dE'
         },
     },
     'kata-gatame': {
-        type: 'osaekomi-waza',
+        type: 'osaikomi-waza',
         name: 'shoulder hold',
         links: {
             'KODOKAN': 'https://youtu.be/zQR3IOXxO_Q'
         },
     },
     'kami-shiho-gatame': {
-        type: 'osaekomi-waza',
+        type: 'osaikomi-waza',
         name: 'upper four quarter hold',
         links: {
             'KODOKAN': 'https://youtu.be/HFuMjOv0WN8'
         },
     },
     'kuzure-kami-shiho-gatame': {
-        type: 'osaekomi-waza',
+        type: 'osaikomi-waza',
         name: 'modified upper four quarter hold',
         links: {
             'KODOKAN': 'https://youtu.be/YUrogQWdwiY'
         },
     },
     'tate-shiho-gatame': {
-        type: 'osaekomi-waza',
+        type: 'osaikomi-waza',
         name: 'vertical four quarter hold',
         links: {
             'KODOKAN': 'https://youtu.be/55-rFmBx53g'
         },
     },
     'yoko-shiho-gatame': {
-        type: 'osaekomi-waza',
+        type: 'osaikomi-waza',
         name: 'side four quarter hold',
         links: {
             'KODOKAN': 'https://youtu.be/TT7XJVSEQxA'
         },
     },
     'ura-gatame': {
-        type: 'osaekomi-waza',
+        type: 'osaikomi-waza',
         name: 'rear hold',
         links: {
             'KODOKAN': 'https://youtu.be/eeAHZB0v3XY'
         },
     },
     'uki-gatame': {
-        type: 'osaekomi-waza',
+        type: 'osaikomi-waza',
         name: 'floating hold',
         links: {
             'KODOKAN': 'https://youtu.be/e_lAjik1SUM'
