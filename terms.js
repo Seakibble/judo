@@ -149,7 +149,6 @@ const judoTerms = {
     
     // ************** Te Waza ************************************
     'ippon-seoinage': {
-        belt: 'yellow',
         type: 'te-waza',
         name: 'one-hand shoulder throw',
         links: {
@@ -158,7 +157,6 @@ const judoTerms = {
         },
     },
     'kata-garuma': {
-        belt: 'green',
         type: 'te-waza',
         name: 'shoulder wheel',
         links: {
@@ -167,7 +165,6 @@ const judoTerms = {
         },
     },
     'kibisu-gaeshi': {
-        belt: '',
         type: 'te-waza',
         name: 'heel counter (a.k.a. ankle pick, heel trip, one-hand reversal)',
         links: {
@@ -175,7 +172,6 @@ const judoTerms = {
         },
     },
     'morote-gari': {
-        belt: '',
         type: 'te-waza',
         name: 'two-hand reap',
         links: {
@@ -183,7 +179,6 @@ const judoTerms = {
         },
     },
     'obi-otoshi': {
-        belt: '',
         type: 'te-waza',
         name: 'belt drop',
         links: {
@@ -191,16 +186,13 @@ const judoTerms = {
         },
     },
     'seoinage': {
-        belt: '',
         type: 'te-waza',
-        name: 'shoulder throw',
-        aka: 'morote seoinage (two-hand shoulder throw)',
+        name: 'shoulder throw, a.k.a. morote seoinage (two-hand shoulder throw)',
         links: {
             'KODOKAN': 'https://youtu.be/zIq0xI0ogxk'
         },
     },
     'seoi-otoshi': {
-        belt: '',
         type: 'te-waza',
         name: 'shoulder drop',
         links: {
@@ -208,7 +200,6 @@ const judoTerms = {
         },
     },
     'sukui-nage': {
-        belt: '',
         type: 'te-waza',
         name: 'scoop throw',
         links: {
@@ -216,7 +207,6 @@ const judoTerms = {
         },
     },
     'sumi-otoshi': {
-        belt: '',
         type: 'te-waza',
         name: 'corner drop',
         links: {
@@ -224,7 +214,6 @@ const judoTerms = {
         },
     },
     'tai-otoshi': {
-        belt: '',
         type: 'te-waza',
         name: 'body drop',
         links: {
@@ -232,7 +221,6 @@ const judoTerms = {
         },
     },
     'uchi-mata-sukashi': {
-        belt: '',
         type: 'te-waza',
         name: 'inner thigh void throw',
         links: {
@@ -240,7 +228,6 @@ const judoTerms = {
         },
     },
     'uki-otoshi': {
-        belt: '',
         type: 'te-waza',
         name: 'floating drop',
         links: {
@@ -248,7 +235,6 @@ const judoTerms = {
         },
     },
     'yama-arashi': {
-        belt: '',
         type: 'te-waza',
         name: 'mountain storm',
         links: {
@@ -256,7 +242,6 @@ const judoTerms = {
         },
     },
     'kouchi-gaeshi': {
-        belt: '',
         type: 'te-waza',
         name: 'small inner counter',
         links: {
@@ -264,7 +249,6 @@ const judoTerms = {
         },
     },
     'kuchiki-taoshi': {
-        belt: '',
         type: 'te-waza',
         name: 'single leg takedown',
         links: {
@@ -275,7 +259,6 @@ const judoTerms = {
 
     // ************** Koshi Waza ************************************
     'daki-age': {
-        belt: '',
         type: 'koshi-waza',
         name: 'hugging high lift',
         links: {
@@ -283,7 +266,6 @@ const judoTerms = {
         },
     },
     'hane-goshi': {
-        belt: '',
         type: 'koshi-waza',
         name: 'springing hip',
         links: {
@@ -291,7 +273,6 @@ const judoTerms = {
         },
     },
     'harai-goshi': {
-        belt: '',
         type: 'koshi-waza',
         name: 'sweeping hip',
         links: {
@@ -299,7 +280,6 @@ const judoTerms = {
         },
     },
     'koshi-guruma': {
-        belt: '',
         type: 'koshi-waza',
         name: 'hip wheel',
         links: {
@@ -307,7 +287,6 @@ const judoTerms = {
         },
     },
     'o-goshi': {
-        belt: '',
         type: 'koshi-waza',
         name: 'full hip',
         links: {
@@ -315,7 +294,6 @@ const judoTerms = {
         },
     },
     'sode-tsurikomi-goshi': {
-        belt: '',
         type: 'koshi-waza',
         name: 'sleeve lifting-and-pulling hip',
         links: {
@@ -323,7 +301,6 @@ const judoTerms = {
         },
     },
     'tsuri-goshi': {
-        belt: '',
         type: 'koshi-waza',
         name: 'lifting hip',
         links: {
@@ -331,7 +308,6 @@ const judoTerms = {
         },
     },
     'tsurikomi-goshi': {
-        belt: '',
         type: 'koshi-waza',
         name: 'lifting-and-pulling hip',
         links: {
@@ -339,7 +315,6 @@ const judoTerms = {
         },
     },
     'uki-goshi': {
-        belt: '',
         type: 'koshi-waza',
         name: 'floating hip',
         links: {
@@ -347,7 +322,6 @@ const judoTerms = {
         },
     },
     'ushiro-goshi': {
-        belt: '',
         type: 'koshi-waza',
         name: 'rear hip',
         links: {
@@ -355,7 +329,6 @@ const judoTerms = {
         },
     },
     'utsuri-goshi': {
-        belt: '',
         type: 'koshi-waza',
         name: 'shifting hip',
         links: {
@@ -365,7 +338,6 @@ const judoTerms = {
 
     // ************** Ashi Waza ************************************
     'ashi-guruma': {
-        belt: '',
         type: 'ashi-waza',
         name: 'leg wheel',
         links: {
@@ -373,7 +345,6 @@ const judoTerms = {
         },
     },
     'de-ashi-barai': {
-        belt: '',
         type: 'ashi-waza',
         name: 'advanced foot sweep',
         links: {
@@ -381,7 +352,6 @@ const judoTerms = {
         },
     },
     'hane-goshi-gaeshi': {
-        belt: '',
         type: 'ashi-waza',
         name: 'hip spring counter',
         links: {
@@ -389,7 +359,6 @@ const judoTerms = {
         },
     },
     'harai-goshi-gaeshi': {
-        belt: '',
         type: 'ashi-waza',
         name: 'hip sweep counter',
         links: {
@@ -397,7 +366,6 @@ const judoTerms = {
         },
     },
     'harai-tsurikomi-ashi': {
-        belt: '',
         type: 'ashi-waza',
         name: 'lifting-and-pulling foot sweep',
         links: {
@@ -405,7 +373,6 @@ const judoTerms = {
         },
     },
     'hiza-guruma': {
-        belt: '',
         type: 'ashi-waza',
         name: 'knee wheel',
         links: {
@@ -413,7 +380,6 @@ const judoTerms = {
         },
     },
     'kosoto-gake': {
-        belt: '',
         type: 'ashi-waza',
         name: 'small outer hook',
         links: {
@@ -421,7 +387,6 @@ const judoTerms = {
         },
     },
     'kosoto-gari': {
-        belt: '',
         type: 'ashi-waza',
         name: 'small outer reap',
         links: {
@@ -429,7 +394,6 @@ const judoTerms = {
         },
     },
     'o-guruma': {
-        belt: '',
         type: 'ashi-waza',
         name: 'big wheel',
         links: {
@@ -437,7 +401,6 @@ const judoTerms = {
         },
     },
     'okuri-ashi-harai': {
-        belt: '',
         type: 'ashi-waza',
         name: 'sliding foot sweep',
         links: {
@@ -445,7 +408,6 @@ const judoTerms = {
         },
     },
     'osoto-gaeshi': {
-        belt: '',
         type: 'ashi-waza',
         name: 'big outer (reap) counter',
         links: {
@@ -453,7 +415,6 @@ const judoTerms = {
         },
     },
     'osoto-gari': {
-        belt: '',
         type: 'ashi-waza',
         name: 'big outer reap',
         links: {
@@ -461,7 +422,6 @@ const judoTerms = {
         },
     },
     'osoto-guruma': {
-        belt: '',
         type: 'ashi-waza',
         name: 'bigg outer wheel',
         links: {
@@ -469,7 +429,6 @@ const judoTerms = {
         },
     },
     'osoto-otoshi': {
-        belt: '',
         type: 'ashi-waza',
         name: 'big outer drop',
         links: {
@@ -477,7 +436,6 @@ const judoTerms = {
         },
     },
     'ouchi-gaeshi': {
-        belt: '',
         type: 'ashi-waza',
         name: 'big inner (reap) counter',
         links: {
@@ -485,7 +443,6 @@ const judoTerms = {
         },
     },
     'ouchi-gari': {
-        belt: '',
         type: 'ashi-waza',
         name: 'big inner reap',
         links: {
@@ -493,7 +450,6 @@ const judoTerms = {
         },
     },
     'sasae-tsurikomi ashi': {
-        belt: '',
         type: 'ashi-waza',
         name: 'propping lifting-and-pulling leg',
         links: {
@@ -501,7 +457,6 @@ const judoTerms = {
         },
     },
     'tsubame-gaeshi': {
-        belt: '',
         type: 'ashi-waza',
         name: 'swallow counter',
         links: {
@@ -509,7 +464,6 @@ const judoTerms = {
         },
     },
     'uchi-mata': {
-        belt: '',
         type: 'ashi-waza',
         name: 'inner thigh',
         links: {
@@ -517,7 +471,6 @@ const judoTerms = {
         },
     },
     'uchi-mata gaeshi': {
-        belt: '',
         type: 'ashi-waza',
         name: 'inner thigh counter',
         links: {
@@ -527,7 +480,6 @@ const judoTerms = {
 
     // ************** Ma-sutemi Waza ************************************
     'hikikomi-gaeshi': {
-        belt: '',
         type: 'ma-sutemi-waza',
         name: 'pulling in counter',
         links: {
@@ -535,7 +487,6 @@ const judoTerms = {
         },
     },
     'sumi-gaeshi': {
-        belt: '',
         type: 'ma-sutemi-waza',
         name: 'corner counter',
         links: {
@@ -543,7 +494,6 @@ const judoTerms = {
         },
     },
     'tawara-gaeshi': {
-        belt: '',
         type: 'ma-sutemi-waza',
         name: 'rice bag counter',
         links: {
@@ -551,7 +501,6 @@ const judoTerms = {
         },
     },
     'tomoe-nage': {
-        belt: '',
         type: 'ma-sutemi-waza',
         name: 'circle throw',
         links: {
@@ -559,7 +508,6 @@ const judoTerms = {
         },
     },
     'ura-nage': {
-        belt: '',
         type: 'ma-sutemi-waza',
         name: 'rear throw',
         links: {
@@ -569,7 +517,6 @@ const judoTerms = {
 
     // ************** Yoko-sutemi Waza ************************************
     'daki-wakare': {
-        belt: '',
         type: 'yoko-sutemi-waza',
         name: 'high separation',
         links: {
@@ -577,7 +524,6 @@ const judoTerms = {
         },
     },
     'hane-makikomi': {
-        belt: '',
         type: 'yoko-sutemi-waza',
         name: 'springing wraparound',
         links: {
@@ -585,7 +531,6 @@ const judoTerms = {
         },
     },
     'harai-makikomi': {
-        belt: '',
         type: 'yoko-sutemi-waza',
         name: '(hip) sweep wraparound',
         links: {
@@ -593,7 +538,6 @@ const judoTerms = {
         },
     },
     'kani-basami': {
-        belt: '',
         type: 'yoko-sutemi-waza',
         name: 'crap or scissors throw',
         links: {
@@ -601,7 +545,6 @@ const judoTerms = {
         },
     },
     'kawazu-gake': {
-        belt: '',
         type: 'yoko-sutemi-waza',
         name: 'one-leg entablement',
         links: {
@@ -609,7 +552,6 @@ const judoTerms = {
         },
     },
     'osoto-makikomi': {
-        belt: '',
         type: 'yoko-sutemi-waza',
         name: 'big outer wraparound',
         links: {
@@ -617,7 +559,6 @@ const judoTerms = {
         },
     },
     'soto-makikomi': {
-        belt: '',
         type: 'yoko-sutemi-waza',
         name: 'outer wraparound',
         links: {
@@ -625,7 +566,6 @@ const judoTerms = {
         },
     },
     'tani-otoshi': {
-        belt: '',
         type: 'yoko-sutemi-waza',
         name: 'valley drop',
         links: {
@@ -633,7 +573,6 @@ const judoTerms = {
         },
     },
     'uchi-makikomi': {
-        belt: '',
         type: 'yoko-sutemi-waza',
         name: 'inner wraparound',
         links: {
@@ -641,7 +580,6 @@ const judoTerms = {
         },
     },
     'uchi-mata-makikomi': {
-        belt: '',
         type: 'yoko-sutemi-waza',
         name: 'inner thigh wraparound',
         links: {
@@ -649,7 +587,6 @@ const judoTerms = {
         },
     },
     'uki-waza': {
-        belt: '',
         type: 'yoko-sutemi-waza',
         name: 'floating technique',
         links: {
@@ -657,7 +594,6 @@ const judoTerms = {
         },
     },
     'yoko-gake': {
-        belt: '',
         type: 'yoko-sutemi-waza',
         name: 'side prop',
         links: {
@@ -665,7 +601,6 @@ const judoTerms = {
         },
     },
     'yoko-guruma': {
-        belt: '',
         type: 'yoko-sutemi-waza',
         name: 'side wheel',
         links: {
@@ -673,7 +608,6 @@ const judoTerms = {
         },
     },
     'yoko-otoshi': {
-        belt: '',
         type: 'yoko-sutemi-waza',
         name: 'side drop',
         links: {
@@ -681,7 +615,6 @@ const judoTerms = {
         },
     },
     'yoko-wakare': {
-        belt: '',
         type: 'yoko-sutemi-waza',
         name: 'side separation',
         links: {
@@ -692,7 +625,6 @@ const judoTerms = {
 
     // ************** Osaekomi Waza ************************************
     'kesa-gatame': {
-        belt: '',
         type: 'osaekomi-waza',
         name: 'scarf hold',
         links: {
@@ -700,7 +632,6 @@ const judoTerms = {
         },
     },
     'kuzure-kesa-gatame': {
-        belt: '',
         type: 'osaekomi-waza',
         name: 'modified scarf hold',
         links: {
@@ -708,7 +639,6 @@ const judoTerms = {
         },
     },
     'ushiro-kesa-gatame': {
-        belt: '',
         type: 'osaekomi-waza',
         name: 'reverse scarf hold',
         links: {
@@ -716,7 +646,6 @@ const judoTerms = {
         },
     },
     'kata-gatame': {
-        belt: '',
         type: 'osaekomi-waza',
         name: 'shoulder hold',
         links: {
@@ -724,7 +653,6 @@ const judoTerms = {
         },
     },
     'kami-shiho-gatame': {
-        belt: '',
         type: 'osaekomi-waza',
         name: 'upper four quarter hold',
         links: {
@@ -732,7 +660,6 @@ const judoTerms = {
         },
     },
     'kuzure-kami-shiho-gatame': {
-        belt: '',
         type: 'osaekomi-waza',
         name: 'modified upper four quarter hold',
         links: {
@@ -740,7 +667,6 @@ const judoTerms = {
         },
     },
     'tate-shiho-gatame': {
-        belt: '',
         type: 'osaekomi-waza',
         name: 'vertical four quarter hold',
         links: {
@@ -748,7 +674,6 @@ const judoTerms = {
         },
     },
     'yoko-shiho-gatame': {
-        belt: '',
         type: 'osaekomi-waza',
         name: 'side four quarter hold',
         links: {
@@ -756,7 +681,6 @@ const judoTerms = {
         },
     },
     'ura-gatame': {
-        belt: '',
         type: 'osaekomi-waza',
         name: 'rear hold',
         links: {
@@ -764,7 +688,6 @@ const judoTerms = {
         },
     },
     'uki-gatame': {
-        belt: '',
         type: 'osaekomi-waza',
         name: 'floating hold',
         links: {
@@ -773,7 +696,6 @@ const judoTerms = {
     },
     // ************** Shime Waza ************************************
     'do-jime': {
-        belt: '',
         type: 'shime-waza',
         name: 'trunk strangle',
         links: {
@@ -781,7 +703,6 @@ const judoTerms = {
         },
     },
     'gyaku-juji-jime': {
-        belt: '',
         type: 'shime-waza',
         name: 'reverse cross strangle',
         links: {
@@ -789,7 +710,6 @@ const judoTerms = {
         },
     },
     'nami-juji-jime': {
-        belt: '',
         type: 'shime-waza',
         name: 'normal cross strangle',
         links: {
@@ -797,7 +717,6 @@ const judoTerms = {
         },
     },
     'kata-juji-jime': {
-        belt: '',
         type: 'shime-waza',
         name: 'trunk strangle',
         links: {
@@ -805,7 +724,6 @@ const judoTerms = {
         },
     },
     'hadaka-jime': {
-        belt: '',
         type: 'shime-waza',
         name: 'naked strangle',
         links: {
@@ -813,7 +731,6 @@ const judoTerms = {
         },
     },
     'kata-ha-jime': {
-        belt: '',
         type: 'shime-waza',
         name: 'single wing strangle',
         links: {
@@ -821,7 +738,6 @@ const judoTerms = {
         },
     },
     'katate-jime': {
-        belt: '',
         type: 'shime-waza',
         name: 'one-hand strangle',
         links: {
@@ -829,7 +745,6 @@ const judoTerms = {
         },
     },
     'okuri-eri-jime': {
-        belt: '',
         type: 'shime-waza',
         name: 'sliding collar or lapel strangle',
         links: {
@@ -837,7 +752,6 @@ const judoTerms = {
         },
     },
     'ryote-jime': {
-        belt: '',
         type: 'shime-waza',
         name: 'two-hand strangle',
         links: {
@@ -845,7 +759,6 @@ const judoTerms = {
         },
     },
     'sankaku-jime': {
-        belt: '',
         type: 'shime-waza',
         name: 'triangle strangle',
         links: {
@@ -853,7 +766,6 @@ const judoTerms = {
         },
     },
     'sode-guruma-jime': {
-        belt: '',
         type: 'shime-waza',
         name: 'sleeve wheel strangle',
         links: {
@@ -861,11 +773,84 @@ const judoTerms = {
         },
     },
     'tsukkomi-jime': {
-        belt: '',
         type: 'shime-waza',
         name: 'thrust strangle',
         links: {
             'KODOKAN': 'https://youtu.be/dKKpnD3eLcY'
+        },
+    },
+
+
+
+    // ************** Kansetsu Waza ************************************
+    'ude-garami': {
+        type: 'kansetsu-waza',
+        name: 'arm entanglement',
+        links: {
+            'KODOKAN': 'https://youtu.be/AIlTvZb4RlE'
+        },
+    },
+    'ude-hishigi-juji-gatame': {
+        type: 'kansetsu-waza',
+        name: 'arm crush cross lock',
+        links: {
+            'KODOKAN': 'https://youtu.be/OWgSOlCuMXw'
+        },
+    },
+    'ude-hishigi-ude-gatame': {
+        type: 'kansetsu-waza',
+        name: 'arm crush arm lock',
+        links: {
+            'KODOKAN': 'https://youtu.be/SBf0aTma1VI'
+        },
+    },
+    'ude-hishigi-hiza-gatame': {
+        type: 'kansetsu-waza',
+        name: 'arm crush knee lock',
+        links: {
+            'KODOKAN': 'https://youtu.be/H2HtAJdiJcE'
+        },
+    },
+    'ude-hishigi-waki-gatame': {
+        type: 'kansetsu-waza',
+        name: 'arm crush armpit lock',
+        links: {
+            'KODOKAN': 'https://youtu.be/8F5p1zuJRG0'
+        },
+    },
+    'ude-hishigi-hara-gatame': {
+        type: 'kansetsu-waza',
+        name: 'arm crush stomach lock',
+        links: {
+            'KODOKAN': 'https://youtu.be/ZzEycg8R_9M'
+        },
+    },
+    'ude-hishigi-ashi-gatame': {
+        type: 'kansetsu-waza',
+        name: 'arm crush leg lock',
+        links: {
+            'KODOKAN': 'https://youtu.be/ClY7g_pX-4s'
+        },
+    },
+    'ude-hishigi-te-gatame': {
+        type: 'kansetsu-waza',
+        name: 'arm crush hand lock',
+        links: {
+            'KODOKAN': 'https://youtu.be/6DnvhY0tQVM'
+        },
+    },
+    'ude-hishigi-sankaku-gatame': {
+        type: 'kansetsu-waza',
+        name: 'arm crush triangle lock',
+        links: {
+            'KODOKAN': 'https://youtu.be/WefAmW4azhk'
+        },
+    },
+    'ashi-garami': {
+        type: 'kansetsu-waza',
+        name: 'leg entanglement',
+        links: {
+            'KODOKAN': 'https://youtu.be/BWWb0GoAtZw'
         },
     },
 }
