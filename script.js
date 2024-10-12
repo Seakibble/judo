@@ -48,7 +48,7 @@ function getTerms() {
 
     if (exact) {
         output += '<div class="exact"><div class="terms">' + makeDefinition(exact, true) + '</div></div>'
-        output += `<p class='results'>Other results:</p>`
+        output += `<p class='results'>All results:</p>`
     }
 
     keys.forEach(term => {
