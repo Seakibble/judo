@@ -19,7 +19,7 @@ function getTerms() {
             let inTerm = term
 
             if (inTerm.includes(searchClean)) {
-                if (inTerm == search) {
+                if (inTerm.toLowerCase() == search.toLowerCase()) {
                     exact = search
                 }
                 return inTerm
