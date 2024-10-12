@@ -423,7 +423,7 @@ const judoTerms = {
     },
     'osoto-guruma': {
         type: 'ashi-waza',
-        name: 'bigg outer wheel',
+        name: 'big outer wheel',
         links: {
             'KODOKAN': 'https://youtu.be/92KbCm6pQeI'
         },
