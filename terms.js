@@ -48,7 +48,6 @@ const judoTerms = {
     
     kami: { name: 'upper'},
     kata: { name: 'single, form or pattern, shoulder, half'},
-    kazure: { name: 'modified'},
     kazushi: { name: "judo principle meaning 'off-balancing an opponent'" },
     katame: { name: 'hold (alternatively gatame)' },
     'katame-waza': { name: 'grappling techniques: comprises oasekomi-waza, shime-waza, and kansetsu waza' },
@@ -60,7 +59,8 @@ const judoTerms = {
     ko: { name: 'small' },
     koshi: { name: 'hip (alternatively koshi)' },
     komi: { name: 'pulling'},
-    kubi: { name: 'neck'},
+    kubi: { name: 'neck' },
+    kuzure: { name: 'modified' },
     kyu: { name: 'nine, coloured belt grade'},
 
     makikomi: { name: 'wraparound'},
