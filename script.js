@@ -19,8 +19,8 @@ function getTerms() {
             let inTerm = term
 
             if (inTerm.includes(searchClean)) {
-                if (inTerm.toLowerCase() == search.toLowerCase()) {
-                    exact = search
+                if (inTerm.toLowerCase() == searchClean) {
+                    exact = inTerm
                 }
                 return inTerm
             }
@@ -47,7 +47,7 @@ function getTerms() {
     }
 
     if (exact) {
-        output += '<div class="exact"><div class="terms">' + makeDefinition(exact, true) + '</div></div>'
+        output += '<div class="exact"><div class="terms">' + makeDefinition(exact) + '</div></div>'
         output += `<p class='results'>All results:</p>`
     }
 
