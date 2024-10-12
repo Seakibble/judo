@@ -11,14 +11,44 @@ function getTerms() {
     let letter = null
     let keys = Object.keys(judoTerms).sort()
 
+    let exact = null
     if (search) {
         keys = keys.filter((term) => {
-            return (term.includes(search.toLowerCase()) || judoTerms[term].name.includes(search.toLowerCase()))
+            let searchClean = search.toLowerCase()
+
+            let inTerm = term
+
+            if (inTerm.includes(searchClean)) {
+                if (inTerm == search) {
+                    exact = search
+                }
+                return inTerm
+            }
+
+            let inName = judoTerms[term].name
+            if (inName.includes(searchClean)) {
+                return inName
+            }
+
+            let inType = judoTerms[term].type 
+            if (inType) {
+                inType = inType
+            }
+
+            if (inType) {
+                return inType.includes(searchClean)
+            } else {
+                return false
+            }
         })
-        output += `<p class='results'>${results(keys.length)}.</p>`
-    
+        output += `<p class='results'>${results(keys.length)}. ${exact ? ' Exact match:':''}</p>`
     } else {
-        output += `<p class='results'>Showing all terms. ${results(keys.length)}.</p>`
+        output += `<p class='results'>${results(keys.length)}. Showing all terms:</p>`
+    }
+
+    if (exact) {
+        output += '<div class="exact"><div class="terms">' + makeDefinition(exact, true) + '</div></div>'
+        output += `<p class='results'>Other results:</p>`
     }
 
     keys.forEach(term => {
@@ -31,25 +61,7 @@ function getTerms() {
             output += '<h2>'+letter.toUpperCase()+'</h2>'
         }
 
-        let waza = judoTerms[term].type
-        let wazaText = ''
-        if (waza) {
-            let wazaTagText = waza.replaceAll('-', '&#8209;')
-            wazaText = `<br><span class='waza ${waza}'>${wazaTagText}</span> `
-        }
-
-        let links = judoTerms[term].links
-        let linkText = []
-        if (links) {
-            Object.keys(links).forEach(link => {
-                linkText.push(`<a class="external" href='${links[link]}' target="_blank">${link}</i></a>`)
-            })
-        }
-        if (linkText.length > 0) {
-            linkText = `<span class='links'>| <em>videos:&nbsp;${linkText.join(', ')}</em></span>`
-        }
-
-        terms += `<p><strong>${term}</strong> - ${judoTerms[term].name} ${wazaText}${linkText}</p>` 
+        terms += makeDefinition(term)
 
     })
 
@@ -82,4 +94,26 @@ function results(n) {
     if (n > 1) return n + ' results' 
     else if (n == 1) return n + ' result'
     else return 'No results'
+}
+
+function makeDefinition(term) {
+    let waza = judoTerms[term].type
+    let wazaText = ''
+    if (waza) {
+        let wazaTagText = waza.replaceAll('-', '&#8209;')
+        wazaText = `<br><span class='waza ${waza}'>${wazaTagText}</span> `
+    }
+
+    let links = judoTerms[term].links
+    let linkText = []
+    if (links) {
+        Object.keys(links).forEach(link => {
+            linkText.push(`<a class="external" href='${links[link]}' target="_blank">${link}</i></a>`)
+        })
+    }
+    if (linkText.length > 0) {
+        linkText = `<span class='links'>| <em>videos:&nbsp;${linkText.join(', ')}</em></span>`
+    }
+
+    return `<p><strong>${term}</strong> — ${judoTerms[term].name} ${wazaText}${linkText}</p>`
 }

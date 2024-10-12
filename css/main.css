@@ -11,6 +11,7 @@
     --light: #ccc;
     --subtle: #888;
     --blue: rgb(85, 215, 255);
+    --spacing: 20px;
 }
 
 body {
@@ -24,13 +25,13 @@ body {
     align-content: start; */
 }
 
-header {
+/* header {
     grid-column: span 2;
     background: #222;
     height: 50px;
 }
 .contents {
-    padding: 10px 20px;
+    padding: 10px 0;
     margin: 0;
     font-size: 1.25em;
     font-weight: bold;
@@ -52,17 +53,17 @@ header {
     background: var(--purpleAccent);
     color: #111;
     cursor: pointer;
-}
+} */
 
 main {
     width: 100%;
     margin: 0 auto;
-    padding: 20px;
+    padding: var(--spacing) 0;
     /* overflow-y: scroll; */
 }
 
 h1 {
-    margin: 0;
+    margin: 0 var(--spacing);
     line-height: 1em;
     font-size: 1.7rem;
     color: var(--purple);
@@ -102,16 +103,16 @@ a:hover {
 }
 
 .searchbar {
-    margin: 0.4em 0 0;
+    margin: 0 var(--spacing) 0.5em;
 }
 .searchbar > i {
     position: absolute;
-    padding: 0.2em 0 0 0.4em;
-    font-size: 1.5rem;
+    padding: 0.1em 0 0 0.4em;
+    font-size: 1.35rem;
 }
 input {
     width: 100%;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     background: transparent;
     border: none;
     color: var(--light);
@@ -136,6 +137,7 @@ input:focus {
 .results {
     grid-column: span 2;
     font-style: italic;
+    margin: 0 var(--spacing);
 }
 
 .glossary {
@@ -143,16 +145,25 @@ input:focus {
     grid-template-columns: auto 1fr;
     grid-gap: 2rem 1rem;
     align-items: start;
+    
 }
 
 .glossary > h2 {
     padding: 0.5rem;
-    margin: 0;
+    margin: 0 var(--spacing);
+}
+
+.exact {
+    color: hsl(51, 100%, 50%);
+    padding: 1em 0;
+    margin: 1em 0;
+    background: hsl(43, 100%, 7%);
 }
 
 .terms {
     border-left: 2px solid #555;
     padding-left: 1rem;
+    margin: 0 var(--spacing);
     height: 100%;
 }
 .terms > p {
