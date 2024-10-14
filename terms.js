@@ -140,7 +140,7 @@ const judoTerms = {
     yubi: { name: 'finger'},
     
     zanshin: { name: 'awareness'},
-    'zempo-kaiten': { name: 'forward (breakfall)'},
+    'zempo-kaiten': { name: 'forward roll'},
     zarei: { name: 'kneeling bow'},
     zubon: { name: 'pants'},
 
