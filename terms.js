@@ -2,7 +2,7 @@ const judoTerms = {
     ashi: { name: 'foot, leg' },
     'ashi-waza': { name: 'foot techniques' },
     arashi: { name: 'storm' },
-    anza: { name: 'sittinh cross legged'},
+    anza: { name: 'sitting cross legged'},
 
     barai: { name: 'sweeping (alternatively harai)'},
 
