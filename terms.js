@@ -83,6 +83,7 @@ const judoTerms = {
     okuri: { name: 'sliding'},
     osaikomi: { name: 'pinning hold, referee call to begin timing'},
     otoshi: { name: 'drop'},
+    osai: { name: 'slow, time-consuming, late'},
 
     randori: { name: 'free practice, sparring'},
     roku: { name: 'six'},
