@@ -351,7 +351,7 @@ const judoTerms = {
         type: 'ashi-waza',
         name: 'leg wheel',
         links: {
-            'KODOKAN': 'ashi-guruma'
+            'KODOKAN': 'https://youtu.be/ROeayhvom9U'
         },
     },
     'de-ashi-barai': {
@@ -414,7 +414,7 @@ const judoTerms = {
         type: 'ashi-waza',
         name: 'sliding foot sweep',
         links: {
-            'KODOKAN': 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX'
+            'KODOKAN': 'https://youtu.be/nw1ZdRjrdRI'
         },
     },
     'osoto-gaeshi': {
