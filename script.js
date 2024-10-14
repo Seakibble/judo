@@ -47,14 +47,14 @@ function getTerms() {
     }
 
     if (exact) {
-        output += '<div class="exact"><div class="terms">' + makeDefinition(exact) + '</div></div>'
+        output += '<div class="exact"><div class="terms">' + makeDefinition(exact).replaceAll('juji','jūji') + '</div></div>'
         output += `<p class='results'>All results:</p>`
     }
 
     keys.forEach(term => {
         if (term[0] != letter) {
             if (terms != '') {
-                output += `<div class='terms'>${terms}</div>`
+                output += `<div class='terms'>${terms.replaceAll('juji','jūji')}</div>`
                 terms = ''
             }
             letter = term[0]
