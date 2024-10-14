@@ -798,7 +798,7 @@ const judoTerms = {
     },
     'sode-guruma-jime': {
         type: 'shime-waza',
-        name: 'sleeve wheel strangle',
+        name: 'sleeve wheel strangle (ezekiel choke)',
         links: {
             'KODOKAN': 'https://youtu.be/E3nvQzClcAU'
         },
