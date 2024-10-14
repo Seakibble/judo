@@ -192,7 +192,14 @@ const judoTerms = {
         type: 'te-waza',
         name: 'belt drop',
         links: {
-            'KODOKAN': 'https://youtu.be/BHLQS4K85bs'
+            'KODOKAN': 'https://youtu.be/ff8U2TVZIYI'
+        },
+    },
+    'obi-tori-gaeshi': {
+        type: 'te-waza',
+        name: 'belt-taking counter',
+        links: {
+            'KODOKAN': 'https://youtu.be/bpc82SrunUU'
         },
     },
     'seoinage': {
@@ -459,6 +466,13 @@ const judoTerms = {
             'KODOKAN': 'https://youtu.be/0itJFhV9pDQ'
         },
     },
+    'kouchi-gari': {
+        type: 'ashi-waza',
+        name: 'small inner reap',
+        links: {
+            'KODOKAN': 'https://youtu.be/3Jb3tZvr9Ng'
+        },
+    },
     'sasae-tsurikomi ashi': {
         type: 'ashi-waza',
         name: 'propping lifting-and-pulling leg',
@@ -573,6 +587,13 @@ const judoTerms = {
         name: 'outer wraparound',
         links: {
             'KODOKAN': 'https://youtu.be/bWG9O1BVKtQ'
+        },
+    },
+    'kouchi-makikomi': {
+        type: 'yoko-sutemi-waza',
+        name: 'small inner wraparound',
+        links: {
+            'KODOKAN': 'https://youtu.be/_1eygIXLD_w'
         },
     },
     'tani-otoshi': {
