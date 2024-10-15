@@ -1,5 +1,6 @@
 let $glossary = document.getElementById('glossary')
 let $search = document.getElementById('search')
+let $cancel = document.getElementById('cancel')
 
 
 function getTerms() {
@@ -82,12 +83,21 @@ getTerms()
 
 let searchTimer = null
 $search.addEventListener('input', () => {
+    search()
+})
+
+function search() {
     if (searchTimer !== null) {
         clearTimeout(searchTimer)
     }
     searchTimer = setTimeout(() => {
         getTerms()
     }, 250)
+}
+
+$cancel.addEventListener('click', () => {
+    $search.value = ''
+    search()
 })
 
 function results(n) {
