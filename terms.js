@@ -751,7 +751,7 @@ const judoTerms = {
     },
     'kata-juji-jime': {
         type: 'shime-waza',
-        name: 'trunk strangle',
+        name: 'half cross strangle',
         links: {
             'KODOKAN': 'https://youtu.be/3VZVUAmiMD8'
         },
