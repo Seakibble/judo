@@ -6,13 +6,16 @@
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
 
-    --purple: #e0f;
-    --purpleAccent: #80a;
-    --light: #ccc;
-    --dark: #0c0c0c;
+    --purple: #90e;
+    --purpleHover: rgb(217, 179, 255);
+    --purpleAccent: #529;
+    --light: #9C9CA5;
+    --dark: #0c0c0f;
     --subtle: #888;
-    --blue: rgb(85, 215, 255);
+    --blue: hsl(194, 80%, 50%);
     --spacing: 20px;
+    --tagSaturation: 60%;
+    --borderColor: #333;
 }
 
 body {
@@ -95,8 +98,8 @@ a:visited {
     color: var(--purpleAccent);
 }
 a:hover {
-    color: var(--blue);
-    border-color: white;
+    color: var(--purpleHover);
+    border-color: var(--subtle);
 }
 
 .links {
@@ -157,7 +160,7 @@ input {
     padding: 0.2em;
     padding-left: 1.6em;
     outline: none;
-    border-bottom: 4px solid #444;
+    border-bottom: 4px solid var(--borderColor);
     border-top-left-radius: 0.25em;
     border-top-right-radius: 0.25em;
     
@@ -204,7 +207,7 @@ input:focus {
 }
 
 .terms {
-    border-left: 2px solid #555;
+    border-left: 3px solid var(--borderColor);
     padding-left: 1rem;
     height: 100%;
 }
@@ -224,28 +227,28 @@ input:focus {
     border-radius: 0.5em;
 }
 .waza.ashi-waza {
-    background: hsl(0, 100%, 30%);
+    background: hsl(0, var(--tagSaturation), 25%);
 }
 .waza.koshi-waza {
-    background: hsl(45, 100%, 17%);
+    background: hsl(45, var(--tagSaturation), 12%);
 }
 .waza.te-waza {
-    background: hsl(90, 100%, 15%);
+    background: hsl(90, var(--tagSaturation), 12%);
 }
 .waza.ma-sutemi-waza {
-    background: hsl(135, 100%, 25%);
+    background: hsl(135, var(--tagSaturation), 20%);
 }
 .waza.yoko-sutemi-waza {
-    background: hsl(180, 100%, 20%);
+    background: hsl(180, var(--tagSaturation), 15%);
 }
 .waza.osaikomi-waza {
-    background: hsl(225, 100%, 40%);
+    background: hsl(225, var(--tagSaturation), 35%);
 }
 .waza.shime-waza {
-    background: hsl(270, 100%, 30%);
+    background: hsl(270, var(--tagSaturation), 25%);
 }
 .waza.kansetsu-waza {
-    background: hsl(315, 100%, 25%);
+    background: hsl(315, var(--tagSaturation), 20%);
 }
 
 .fadein {
@@ -284,7 +287,7 @@ input:focus {
     }
     .glossary > h2 {
         padding: 0;
-        border-bottom: 2px solid #555;
+        border-bottom: 3px solid var(--borderColor);
         margin: 1.5em var(--spacing) 0.5em;
         padding-bottom: 0.5rem;
     }
