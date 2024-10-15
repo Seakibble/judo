@@ -51,6 +51,7 @@ const judoTerms = {
     judoka: { name: 'judo practitioner'},
     
     kami: { name: 'upper'},
+    'kano jigoro': { name: 'the founder of judo'},
     kata: { name: 'single, form or pattern, shoulder, half'},
     kazushi: { name: "off-balancing" },
     katame: { name: 'hold, lock (sometimes spelled gatame)' },
@@ -117,7 +118,7 @@ const judoTerms = {
     sumi: { name: 'corner'},
     shi: { name: 'four'},
     shichi: { name: 'seven'},
-    'seiryoku-zenyo': { name: "judo principle meaning 'good use of energy'" },
+    'seiryoku-zenyo': { name: "maximum efficiency, minimal effort" },
     
     tatami: { name: 'straw mat, training mat'},
     te: { name: 'hand'},
