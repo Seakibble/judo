@@ -99,6 +99,7 @@ function search() {
 
 $cancel.addEventListener('click', () => {
     $search.value = ''
+    $search.focus()
     search()
 })
 
