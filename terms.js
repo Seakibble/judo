@@ -159,7 +159,7 @@ const judoTerms = {
     // Techniques
     
     // ************** Te Waza ************************************
-    'ippon-seoinage': {
+    'ippon-seoi-nage': {
         type: 'te-waza',
         name: 'one-hand shoulder throw',
         links: {
@@ -203,9 +203,9 @@ const judoTerms = {
             'KODOKAN': 'https://youtu.be/bpc82SrunUU'
         },
     },
-    'seoinage': {
+    'seoi-nage': {
         type: 'te-waza',
-        name: 'shoulder throw, a.k.a. morote seoinage (two-hand shoulder throw)',
+        name: 'shoulder throw, a.k.a. morote-seoi-nage (two-hand shoulder throw)',
         links: {
             'KODOKAN': 'https://youtu.be/zIq0xI0ogxk'
         },
