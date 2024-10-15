@@ -66,7 +66,7 @@ function getTerms() {
     })
 
     if (terms != '') {
-        output += `<div class='terms'>${terms}</div>`
+        output += `<div class='terms'>${termsreplaceAll('juji','jūji').replaceAll('judo','Judo').replaceAll('kano jigoro','Kanō Jigorō')}</div>`
         terms = ''
     }
 
