@@ -87,6 +87,8 @@ $search.addEventListener('input', () => {
 })
 
 function search() {
+    globalThis.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+
     if (searchTimer !== null) {
         clearTimeout(searchTimer)
     }
